@@ -1,0 +1,430 @@
+{
+  "nav": {
+    "title": "🗳️ Anonymous Evaluation System",
+    "home": "Home",
+    "vote": "Evaluate",
+    "results": "Results",
+    "privacy": "Privacy",
+    "admin": "Admin",
+    "logout": "Logout"
+  },
+  "home": {
+    "title": "Anonymous Personal Feedback System",
+    "subtitle": "Provide honest, anonymous feedback to your teammates",
+    "submitFeedback": "Submit Feedback",
+    "submitFeedbackDesc": "Use your evaluation token to provide anonymous feedback to your colleagues.",
+    "submitFeedbackBtn": "Start Evaluation",
+    "viewResults": "View Your Results",
+    "viewResultsDesc": "See the anonymous feedback you've received from your peers.",
+    "viewResultsBtn": "View Results",
+    "privacy": "🔒 Privacy & Security",
+    "privacyDesc": "Your responses are completely anonymous. No personal data is stored.",
+    "learnMore": "Learn More",
+    "howItWorks": "How It Works",
+    "step1": "1️⃣ Get Your Token",
+    "step1Desc": "Receive a unique token to participate.",
+    "step2": "2️⃣ Provide Feedback",
+    "step2Desc": "Select a colleague and choose their strengths and development areas.",
+    "step3": "3️⃣ View Your Feedback",
+    "step3Desc": "Use your access token to see the anonymous feedback you received.",
+    "keyFeatures": "✓ Key Features:",
+    "feature1": "✓ Completely anonymous - No personal data stored",
+    "feature2": "✓ One evaluation per token per survey",
+    "feature3": "✓ Candidates only see their own results",
+    "feature4": "✓ Secure token-based authentication",
+    "feature5": "✓ Visual charts for feedback results"
+  },
+  "voting": {
+    "title": "Submit Your Feedback",
+    "subtitle": "Enter Your Evaluation Token",
+    "enterToken": "Enter Your Evaluation Token",
+    "tokenPlaceholder": "Paste your token here...",
+    "tokenHelp": "You received this token to participate",
+    "startVoting": "Start Evaluation",
+    "survey": "Survey",
+    "selectCandidate": "Who are you evaluating?",
+    "strengths": "Strengths (What they do well)",
+    "weaknesses": "Areas for Development (What could be improved)",
+    "comments": "Additional Comments (Optional)",
+    "commentPlaceholder": "Share any additional thoughts...",
+    "submitVote": "Submit Evaluation",
+    "submitting": "Submitting...",
+    "success": "✓ Evaluation Submitted Successfully!",
+    "successMsg": "Thank you for providing your feedback. Your response has been recorded.",
+    "successNote": "Please note: You can only evaluate once per survey. Your response is completely anonymous.",
+    "close": "Close",
+    "error": "⚠️ Already Submitted",
+    "alreadyVoted": "You have already submitted an evaluation for this survey. Thank you for your participation!",
+    "goBack": "Go Back",
+    "missingToken": "Missing token",
+    "missingCandidate": "Please select a candidate",
+    "missingFeedback": "Please select at least one strength or weakness",
+    "notFound": "Survey not found or candidate not found",
+    "invalidToken": "Token is invalid or already used",
+    "errorLoading": "Unable to load data",
+    "errorSubmitting": "Unable to submit evaluation",
+    "noMatchingSurveyForToken": "This token does not match any active survey",
+    "tokenAlreadyUsed": "⚠️ This token has already been used",
+    "tokenOf": "Token owner",
+    "currentToken": "Current token",
+    "selectSurveyTitle": "Select Survey",
+    "selectSurveySubtitle": "This token can be used in more than one survey. Choose one.",
+    "noSurveysForToken": "No active surveys match this token",
+    "formTitle": "Evaluation",
+    "formSubtitle": "",
+    "savedContinue": "Saved. You can continue evaluating others."
+  },
+  "results": {
+    "title": "View Your Feedback",
+    "subtitle": "Enter your access token to see your personal feedback results",
+    "enterToken": "Enter Your Access Token",
+    "tokenPlaceholder": "Paste your token here...",
+    "tokenHelp": "You received this token to view your feedback results",
+    "viewResults": "View Results",
+    "yourResults": "Your Feedback Results",
+    "viewingResultsFor": "Viewing results for",
+    "anonFeedback": "Anonymous feedback from your peers",
+    "candidateName": "Candidate Name:",
+    "totalVotes": "Total Evaluations Received:",
+    "strengths": "Strengths",
+    "weaknesses": "Areas for Development",
+    "votes": "evaluations",
+    "noVotes": "No evaluations received yet",
+    "note": "📊 Note: These results show your personal feedback from peers. Your results are completely confidential.",
+    "viewDifferent": "View Different Results",
+    "loadingResults": "Loading results...",
+    "invalidToken": "Invalid token or unable to fetch results",
+    "notCandidateToken": "⚠️ This token is for voting only. To view feedback results, please use a candidate token that was assigned to you.",
+    "commentsTitle": "Additional Comments",
+    "noComments": "No additional comments yet"
+  },
+  "privacy": {
+    "title": "Privacy & Security",
+    "howWeProtect": "🔒 How We Protect Your Privacy",
+    "noPersonalData": "No Personal Data: We don't store your name, email, or any identifying information.",
+    "tokenBased": "Token-Based: You're identified only by your anonymous token.",
+    "hashedTokens": "Hashed Tokens: Tokens are hashed for security purposes.",
+    "oneVote": "One evaluation per token: Each token can only be used once per survey.",
+    "anonVoting": "Anonymous evaluation: Responses are never linked back to the evaluator.",
+    "whatPeersSee": "👤 What Your Peers See",
+    "peerDesc": "When someone evaluates you, they can only select from predefined options:",
+    "strengths": "Strengths (what you do well)",
+    "weaknesses": "Areas for development (what could be improved)",
+    "optionalFeedback": "Optional written feedback",
+    "noVoterInfo": "No evaluator identification is ever revealed to you.",
+    "whatYouSee": "📊 What You Can See",
+    "seeVoteCount": "Number of evaluations for each strength/weakness",
+    "seeFeedback": "Aggregated feedback in chart format",
+    "seeComments": "Optional written comments (if provided)",
+    "seeOnlyYours": "ONLY your own results - never others' results",
+    "questions": "❓ Questions?",
+    "contactAdmin": "If you have concerns about privacy or security, please contact your administrator."
+  },
+  "survey": {
+    "title": "Survey Management",
+    "createNew": "Create New Survey",
+    "editSurvey": "Edit Survey",
+    "searchPlaceholder": "Search surveys...",
+    "noSurveys": "No surveys yet. Create one to get started!",
+    "description": "Description",
+    "expiresAt": "Expiration Date (Optional)",
+    "status": "Status",
+    "statusDraft": "Draft",
+    "statusActive": "Active",
+    "statusClosed": "Closed",
+    "tokenPolicy": "Token Policy",
+    "policy": {
+      "multiCandidate": "Multi-use (evaluate many candidates)",
+      "singleUse": "Single-use (evaluate once)"
+    },
+    "candidates": "Candidates",
+    "votes": "Evaluations",
+    "created": "Created",
+    "actionsLabel": "Actions",
+    "manageCandidates": "Manage Candidates",
+    "manageFeedback": "Manage Feedback Options",
+    "errors": {
+      "fetchFailed": "Failed to fetch surveys",
+      "titleRequired": "Survey title is required",
+      "createFailed": "Failed to create survey",
+      "updateFailed": "Failed to update survey",
+      "statusUpdateFailed": "Failed to update survey status"
+    },
+    "messages": {
+      "created": "Survey created successfully!",
+      "updated": "Survey updated successfully!",
+      "statusUpdated": "Survey status updated!"
+    },
+    "actions": {
+      "edit": "Edit Survey",
+      "manageTokens": "Manage Tokens",
+      "manageFeedback": "Manage Feedback",
+      "bulkGenerate": "Bulk Generate Tokens",
+      "viewResults": "View Survey Results"
+    },
+    "placeholders": {
+      "title": "e.g., Q4 2025 Performance Review",
+      "description": "Optional description..."
+    }
+  },
+  "admin": {
+    "login": {
+      "title": "🔐 Admin Portal",
+      "subtitle": "Sign in to manage surveys and generate tokens",
+      "username": "Username",
+      "password": "Password",
+      "usernamePlaceholder": "Enter your username",
+      "passwordPlaceholder": "Enter your password",
+      "signIn": "Sign In",
+      "signingIn": "Signing in...",
+      "failed": "Login failed",
+      "sessionExpired": "Session expired. Please sign in again.",
+      "footer": "Contact your system administrator if you forgot your credentials."
+    },
+    "nav": {
+      "menu": "Menu",
+      "dashboard": "Dashboard",
+      "surveys": "Survey Management",
+      "tokens": "Token Management",
+      "bulkTokens": "Bulk Token Generation",
+      "feedback": "Feedback Options",
+      "results": "Survey Results"
+    },
+    "dashboard": {
+      "title": "👨‍💼 Admin Dashboard",
+      "welcome": "Welcome, {{name}}!",
+      "surveysTitle": "Survey Management",
+      "surveysDesc": "Create, edit, and manage surveys. Change status and monitor progress.",
+      "tokensTitle": "Token Management",
+      "tokensDesc": "Create, manage, and track tokens in a table.",
+      "feedbackTitle": "Feedback Options",
+      "feedbackDesc": "Manage strengths and weaknesses feedback options.",
+      "bulkTitle": "Bulk Token Generator",
+      "bulkDesc": "Generate multiple tokens at once for surveys.",
+      "resultsTitle": "Survey Results",
+      "resultsDesc": "View results and analytics",
+      "comingSoon": "Coming Soon"
+    },
+    "results": {
+      "title": "📊 Survey Results",
+      "selectSurvey": "Select Survey",
+      "survey": "Survey",
+      "chooseSurvey": "-- Choose a survey --",
+      "overview": "Overview",
+      "totalEvaluations": "Total Evaluations",
+      "noResults": "No results yet for this survey",
+      "failedToLoadSurveys": "Failed to load surveys",
+      "failedToLoadResults": "Failed to load results"
+    },
+    "bulkTokens": {
+      "title": "Generate Tokens",
+      "createForSurvey": "Create Tokens for Survey",
+      "selectSurvey": "Select Survey",
+      "chooseSurvey": "-- Choose a survey --",
+      "tokenCount": "Number of Tokens",
+      "generate": "Generate Tokens",
+      "generating": "Generating...",
+      "generatedTitle": "✅ Tokens Generated Successfully!",
+      "generatedWarning": "⚠️ Tokens are stored for this survey. Treat them as secrets and share securely.",
+      "copyAll": "📋 Copy All Tokens",
+      "exportCsv": "📥 Export as CSV",
+      "tokenList": "Token List ({{count}})",
+      "instructionsTitle": "Instructions for Distribution:",
+      "instructions1": "Copy tokens using the button above or export as CSV",
+      "instructions2": "Share one token per evaluator through a secure channel (email, SMS, etc.)",
+      "instructions3": "Evaluators use their token to access the evaluation form",
+      "instructions4": "Each token can be used to evaluate multiple candidates (one evaluation per candidate)",
+      "copied": "Tokens copied to clipboard!",
+      "selectSurveyAndCount": "Please select a survey and enter a valid token count",
+      "failedToGenerate": "Failed to generate tokens",
+      "failedToLoadSurveys": "Failed to load surveys",
+      "unexpectedResponse": "Unexpected response format from server",
+      "failedToLoadTokens": "Failed to load existing tokens",
+      "used": "Used",
+      "unused": "Unused",
+      "unusedCount": "Unused: {{count}}",
+      "usedCount": "Used: {{count}}",
+      "usedAt": "Used at"
+    },
+    "tokenMgmt": {
+      "title": "🎫 Token Management Dashboard",
+      "subtitle": "Create, manage, and track evaluation tokens",
+      "generatedTokenTitle": "Generated Token",
+      "copyToken": "Copy Token",
+      "copied": "Copied!",
+      "createCandidateTitle": "Create New Candidate",
+      "candidateName": "Candidate Name",
+      "employeeId": "Employee ID",
+      "department": "Department",
+      "creating": "Creating...",
+      "createAndGenerate": "Create & Generate Token",
+      "createCandidateAndToken": "Create Candidate & Token",
+      "loadingCandidates": "Loading candidates...",
+      "noCandidates": "No candidates found",
+      "selectSurveyToManage": "Select a survey to manage tokens",
+      "placeholders": {
+        "name": "Enter name",
+        "optional": "Optional",
+        "search": "Search by name or employee ID..."
+      },
+      "table": {
+        "name": "Name",
+        "employeeId": "Employee ID",
+        "department": "Department",
+        "status": "Token Status",
+        "createdAt": "Created At",
+        "actions": "Actions"
+      },
+      "status": {
+        "used": "✓ Used",
+        "unused": "○ Unused",
+        "none": "✕ No Token"
+      },
+      "actions": {
+        "regenerate": "Generate new token",
+        "delete": "Delete candidate"
+      },
+      "confirm": {
+        "regenerate": "Generate new token for this candidate? (Old token will be deleted)",
+        "delete": "Delete this candidate? This action cannot be undone."
+      },
+      "messages": {
+        "created": "✓ Candidate created with token!",
+        "editComingSoon": "✓ Edit feature coming soon! Use regenerate to create a new token.",
+        "regenerated": "✓ Token regenerated!",
+        "deleted": "✓ Candidate deleted!"
+      },
+      "errors": {
+        "loadSurveys": "Failed to load surveys",
+        "loadCandidates": "Failed to load candidates",
+        "candidateNameRequired": "Candidate name is required",
+        "createCandidate": "Failed to create candidate",
+        "updateCandidate": "Failed to update candidate",
+        "regenerate": "Failed to regenerate token",
+        "deleteCandidate": "Failed to delete candidate"
+      }
+    },
+    "feedbackOptions": {
+      "title": "💡 Feedback Options Management",
+      "subtitle": "Manage strengths and weaknesses feedback options",
+      "loading": "Loading feedback options...",
+      "selectSurvey": "Select a survey to manage feedback options",
+      "strengthsTitle": "✅ Strengths (Positive Feedback)",
+      "weaknessesTitle": "❌ Weaknesses (Areas for Improvement)",
+      "addStrength": "Add Strength",
+      "addWeakness": "Add Weakness",
+      "emptyStrengths": "No strengths added yet",
+      "emptyWeaknesses": "No weaknesses added yet",
+      "actions": {
+        "edit": "Edit option",
+        "delete": "Delete option"
+      },
+      "types": {
+        "strength": "Strength",
+        "weakness": "Weakness"
+      },
+      "modal": {
+        "addTitle": "Add New Option",
+        "editTitle": "Edit Option",
+        "optionText": "Option Text",
+        "displayOrder": "Display Order",
+        "saving": "Saving...",
+        "add": "Add Option",
+        "update": "Update Option",
+        "placeholders": {
+          "optionText": "Enter option text"
+        }
+      },
+      "confirm": {
+        "delete": "Delete this option? This action cannot be undone."
+      },
+      "messages": {
+        "added": "✓ Feedback option added successfully!",
+        "deleted": "✓ Option deleted successfully!",
+        "updateComingSoon": "✓ Update feature coming soon! For now, delete and recreate."
+      },
+      "errors": {
+        "loadSurveys": "Failed to load surveys",
+        "loadOptions": "Failed to load feedback options",
+        "textRequired": "Option text is required",
+        "saveFailed": "Failed to save option",
+        "deleteFailed": "Failed to delete option"
+      }
+    },
+    "createCandidate": {
+      "title": "Create Candidate & Token",
+      "survey": "Survey",
+      "selectSurvey": "Select a survey...",
+      "candidateName": "Candidate Name",
+      "employeeId": "Employee ID",
+      "department": "Department",
+      "generatedToken": "Generated Token",
+      "copyToken": "Copy Token",
+      "creating": "Creating...",
+      "createAndGenerate": "Create & Generate Token",
+      "alertTokenCopied": "Token copied!",
+      "placeholders": {
+        "name": "Enter candidate name",
+        "employeeId": "Enter employee ID (optional)",
+        "department": "Enter department (optional)"
+      },
+      "messages": {
+        "created": "✓ Candidate \"{{name}}\" created successfully!",
+        "copied": "✓ Token copied to clipboard!"
+      },
+      "errors": {
+        "loadSurveys": "Failed to load surveys",
+        "selectSurvey": "Please select a survey",
+        "nameRequired": "Candidate name is required",
+        "adminTokenMissing": "Admin token not found. Please login again.",
+        "createFailed": "Failed to create candidate with token"
+      }
+    },
+    "candidateTokens": {
+      "title": "🎫 Candidate Token Management",
+      "selectSurvey": "Select Survey",
+      "chooseSurvey": "-- Choose a survey --",
+      "employeeIdLabel": "ID",
+      "generatedAt": "Generated",
+      "usedAt": "Used",
+      "generating": "Generating...",
+      "generate": "+ Generate",
+      "regenerating": "Regenerating...",
+      "regenerate": "🔄 New",
+      "noCandidates": "No candidates found for this survey",
+      "status": {
+        "used": "✅ Token Used",
+        "active": "🎫 Token Active",
+        "none": "⚠️ No Token"
+      },
+      "confirm": {
+        "regenerate": "This will invalidate the previous token. Continue?"
+      },
+      "alert": {
+        "generated": "Token generated for candidate:\n\n{{token}}\n\nThis token will be copied to your clipboard.",
+        "regenerated": "New token generated for candidate:\n\n{{token}}\n\nThis token will be copied to your clipboard."
+      },
+      "errors": {
+        "loadSurveys": "Failed to load surveys",
+        "loadCandidatesOrTokens": "Failed to load candidates or tokens",
+        "generateFailed": "Failed to generate token",
+        "regenerateFailed": "Failed to regenerate token"
+      }
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "create": "Create",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "selectSurvey": "Select a survey...",
+    "changeToken": "Change Token / Re-enter"
+  },
+  "language": "Language",
+  "english": "English",
+  "thai": "ไทย"
+}
+

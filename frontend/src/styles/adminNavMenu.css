@@ -1,0 +1,356 @@
+.admin-nav-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* ===== Mobile Toggle Button (hidden on desktop) ===== */
+.admin-nav-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.admin-nav-toggle:hover {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.menu-icon {
+  font-size: 1.2rem;
+}
+
+/* ===== Slide-out Navigation (Mobile) ===== */
+.admin-nav-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 280px;
+  height: 100vh;
+  background: white;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.admin-nav-menu.open {
+  left: 0;
+}
+
+.admin-nav-header {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.admin-nav-user {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.admin-nav-list {
+  list-style: none;
+  padding: 15px 10px;
+  margin: 0;
+  flex: 1;
+}
+
+.admin-nav-list li {
+  margin-bottom: 5px;
+}
+
+.admin-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.admin-nav-item:hover {
+  background: #f3f4f6;
+  color: #1d4ed8;
+}
+
+.admin-nav-item.active {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  color: #1d4ed8;
+  font-weight: 600;
+  border-left: 4px solid #3b82f6;
+}
+
+.nav-icon {
+  font-size: 1.3rem;
+  width: 30px;
+  text-align: center;
+}
+
+.nav-label {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.admin-nav-footer {
+  padding: 15px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.admin-nav-logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  background: #fee2e2;
+  color: #dc2626;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-nav-logout:hover {
+  background: #fecaca;
+}
+
+/* Overlay */
+.admin-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Desktop Logout Button (hidden on mobile) */
+.desktop-logout-item {
+  display: none;
+}
+
+.logout-btn {
+  color: #dc2626 !important;
+  background: #fef2f2 !important;
+}
+
+.logout-btn:hover {
+  background: #fee2e2 !important;
+  color: #b91c1c !important;
+}
+
+/* ===== Desktop: Inline Horizontal Menu ===== */
+@media (min-width: 769px) {
+  .admin-nav-container {
+    margin-bottom: 24px;
+  }
+
+  /* Hide mobile toggle on desktop */
+  .admin-nav-toggle {
+    display: none;
+  }
+
+  /* Show menu as horizontal bar */
+  .admin-nav-menu {
+    position: static;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    overflow: visible;
+  }
+
+  .admin-nav-menu.open {
+    left: 0;
+  }
+
+  /* Hide header and footer on desktop */
+  .admin-nav-header,
+  .admin-nav-footer {
+    display: none;
+  }
+
+  /* Show desktop logout */
+  .desktop-logout-item {
+    display: block;
+    margin-left: auto;
+  }
+
+  .desktop-logout-item .logout-btn {
+    background: #fef2f2 !important;
+    color: #dc2626 !important;
+  }
+
+  .desktop-logout-item .logout-btn:hover {
+    background: #fee2e2 !important;
+  }
+
+  /* Horizontal menu list */
+  .admin-nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    align-items: center;
+  }
+
+  .admin-nav-list li {
+    margin: 0;
+  }
+
+  .admin-nav-item {
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    gap: 8px;
+    white-space: nowrap;
+  }
+
+  .admin-nav-item.active {
+    border-left: none;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    width: auto;
+  }
+
+  /* Hide overlay on desktop */
+  .admin-nav-overlay {
+    display: none;
+  }
+
+  /* Add logout button inline on desktop */
+  .admin-nav-menu::after {
+    content: none;
+  }
+}
+
+/* ===== Large Desktop ===== */
+@media (min-width: 1024px) {
+  .admin-nav-item {
+    padding: 12px 18px;
+    font-size: 0.95rem;
+  }
+
+  .nav-icon {
+    font-size: 1.2rem;
+  }
+}
+
+/* ===== Tablet (show hamburger but larger menu) ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .admin-nav-menu {
+    width: 300px;
+    left: -320px;
+  }
+
+  .admin-nav-menu.open {
+    left: 0;
+  }
+
+  .admin-nav-toggle {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== Small Mobile ===== */
+@media (max-width: 480px) {
+  .admin-nav-container {
+    margin-bottom: 16px;
+  }
+
+  .admin-nav-toggle {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .menu-text {
+    display: inline;
+  }
+
+  .admin-nav-menu {
+    width: 85%;
+    max-width: 300px;
+    left: -100%;
+  }
+
+  .admin-nav-menu.open {
+    left: 0;
+  }
+
+  .admin-nav-item {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+
+  .nav-icon {
+    font-size: 1.2rem;
+    width: 28px;
+  }
+}
+
+/* ===== Very Small Mobile ===== */
+@media (max-width: 360px) {
+  .admin-nav-menu {
+    width: 100%;
+  }
+
+  .admin-nav-toggle {
+    padding: 10px 14px;
+  }
+
+  .menu-text {
+    display: none;
+  }
+
+  .admin-nav-item {
+    padding: 11px 12px;
+    font-size: 0.85rem;
+    gap: 10px;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    width: 26px;
+  }
+
+  .nav-label {
+    font-size: 0.85rem;
+  }
+}
