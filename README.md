@@ -4,10 +4,7 @@
 <img width="1470" height="751" alt="image" src="https://github.com/user-attachments/assets/84f0ba58-c797-4adf-b154-57d781a11871" />
 <img width="1470" height="752" alt="image" src="https://github.com/user-attachments/assets/7dee6eb6-6b52-4105-8c4c-82f4df73f7e1" />
 <img width="1470" height="750" alt="image" src="https://github.com/user-attachments/assets/c9786c05-d33c-4a6d-9c46-65c2573b070c" />
-<img width="1470" height="797" alt="image" src="https://github.com/user-attachments/assets/cd46a72d-d46c-42f3-b9cf-260cf337882f" />
-
-
-
+<img width="1470" height="753" alt="image" src="https://github.com/user-attachments/assets/9449845b-d6ca-41de-8043-1340be5257a1" />
 
 ระบบประเมินแบบไม่ระบุตัวตน (Anonymous Feedback/Evaluation System) ที่ออกแบบสำหรับการประเมินผลในทีมหรือองค์กร โดยมีความเป็นส่วนตัวสูงสุดและความปลอดภัย
 
