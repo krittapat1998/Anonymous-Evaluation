@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './styles/main.css';
@@ -20,47 +20,44 @@ function Navigation() {
   const { logout, userRole } = useAuth();
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
-    <nav className="navbar" style={{ 
-      background: 'linear-gradient(135deg, #2563eb, #1e40af)',
-      padding: '0 20px',
-      height: '70px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      color: 'white',
-      boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
-    }}>
-      <div style={{ fontSize: '1.3rem', fontWeight: 'bold' }}>
-        <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
+    <nav className="main-navbar">
+      <div className="navbar-brand">
+        <Link to="/" onClick={closeMobileMenu}>
           {t('nav.title')}
         </Link>
       </div>
-      <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-        <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>{t('nav.home')}</Link>
-        <Link to="/vote" style={{ color: 'white', textDecoration: 'none' }}>{t('nav.vote')}</Link>
-        <Link to="/results" style={{ color: 'white', textDecoration: 'none' }}>{t('nav.results')}</Link>
+      
+      <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+        {mobileMenuOpen ? '✕' : '☰'}
+      </button>
+      
+      <div className={`navbar-links ${mobileMenuOpen ? 'open' : ''}`}>
+        <Link to="/" onClick={closeMobileMenu}>{t('nav.home')}</Link>
+        <Link to="/vote" onClick={closeMobileMenu}>{t('nav.vote')}</Link>
+        <Link to="/results" onClick={closeMobileMenu}>{t('nav.results')}</Link>
         <LanguageSwitcher />
-        <Link to="/admin/login" style={{ color: 'white', textDecoration: 'none', fontWeight: 500 }}>
+        <Link to="/admin/login" onClick={closeMobileMenu} className="admin-link">
           {t('nav.admin')}
         </Link>
         {userRole && (
-          <button 
-            onClick={logout}
-            style={{
-              background: 'rgba(255,255,255,0.2)',
-              border: '1px solid white',
-              color: 'white',
-              padding: '6px 12px',
-              borderRadius: '4px',
-              cursor: 'pointer'
-            }}
-          >
+          <button onClick={() => { logout(); closeMobileMenu(); }} className="navbar-logout-btn">
             {t('nav.logout')}
           </button>
         )}
       </div>
+      
+      {mobileMenuOpen && <div className="mobile-menu-overlay" onClick={closeMobileMenu}></div>}
     </nav>
   );
 }
